@@ -58,7 +58,7 @@ function watchSubmit(){
         const number = numberTarget.val();
         // clear out the input
         queryTarget.val("");
-        getDataFromApi(query, number, state, displaySearchData);
+        accessApi(query, number, state, displaySearchData);
       });
 
 
