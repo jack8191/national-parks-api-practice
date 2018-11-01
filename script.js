@@ -6,9 +6,6 @@
 
 'use strict';
 
-const apiKey = 'b5UimDNB3W8LdVC6g99ZVIr5fv4X8VMfyzRR12pW'; 
-const searchURL = 'https://developer.nps.gov/api/v1/';
-
 //function formatParams(params){
 //    function formatQueryParams(params) {
 //        const queryItems = Object.keys(params)
@@ -21,6 +18,7 @@ const searchURL = 'https://developer.nps.gov/api/v1/';
 function accessApi(searchTerm, numberOfResults, state, callback){
     let url = 'https://developer.nps.gov/api/v1/parks?'
     let params = {
+        apiKey: 'b5UimDNB3W8LdVC6g99ZVIr5fv4X8VMfyzRR12pW',
         stateCode: `${state} in:name`,
         limit: `${numberOfResults} in:name`,
         start: 1,
